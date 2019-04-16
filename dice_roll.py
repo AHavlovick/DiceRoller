@@ -10,7 +10,7 @@ class Diestate:
     except ValueError:
       return False
     else:
-      if test < 1:
+      if test < 1 or isinstance(self.value, float):
         return False
       else:
         return True
